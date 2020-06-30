@@ -1,4 +1,4 @@
-function teste(){
+function home(){
     window.location="index.html";
-    
+
     }

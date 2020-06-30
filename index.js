@@ -2,7 +2,7 @@ function testar(){
     window.location="login.html";
     }
 
-function enviar(){
+function validar(){
     var txtEmail = document.getElementById("txtEmail").value;
     var txtSenha = document.getElementById("txtSenha").value;
 
@@ -46,5 +46,5 @@ function efetivarLogin(res){
     // qual a idéia? gravar no LocalStorage o objeto que eu recebi
     // redirecionar para a página HOME.HTML
     localStorage.setItem("userDash",JSON.stringify(res));
-    window.location="home.html";
+    window.location="dropdown.html";
 }
