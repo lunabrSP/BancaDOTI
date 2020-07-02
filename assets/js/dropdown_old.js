@@ -42,12 +42,6 @@ function carregaTopTen() {
 }
 
 function preencheTopTen(resJson2) {
-    var userLogado = localStorage.getItem("userDash");
-   
-    if (!userLogado){
-        // se não tiver, redireciona pra o INDEX  (ou seja, não tá logado)
-        window.location="index.html";
-    }
 
     var contTT ="";
     for(i=0; i<resJson2.length; i++){       

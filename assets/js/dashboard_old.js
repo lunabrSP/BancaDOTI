@@ -1,4 +1,3 @@
-
 var templateUser = `<div class="row">
                         <div class="col-md-12">
                            <h3>**NOME** / **VOLUME**</h3>
@@ -21,59 +20,15 @@ function carregaVolume(){
         .then(res => preenche(res))
 }
 function preenche(res){
-	
-	var userLogado = localStorage.getItem("userDash");
-   
-    if (!userLogado){
-        // se não tiver, redireciona pra o INDEX  (ou seja, não tá logado)
-        window.location="index.html";
-    }
-
-	console.log(res);    
+    console.log(res);    
 
     document.getElementById("conteudo").innerHTML = res.nome;
     document.getElementById("sucesso").innerHTML = res.statusOk;
     document.getElementById("falha").innerHTML = res.statusFalha;
-	document.getElementById("fraude").innerHTML = res.statusFraude;
-	document.getElementById("x").innerHTML = res.statusFraude;
+    document.getElementById("fraude").innerHTML = res.statusFraude;
 	document.getElementById("total").innerHTML = res.statusFraude+res.statusOk+res.statusFalha;
 
 }
-
-id="x";
-
-
-$(document).ready(function(){
-	var ctx = $("#mycanvas").get(0).getContext("2d");
-			  
-					  //pie chart data
-					  //sum of values = 360
-					  var data = [
-						{
-						  value: 500,
-						  color: "cornflowerblue",
-						  highlight: "lightskyblue",
-						  label: "Corn Flower Blue"
-						 
-						},
-						{
-						  value: 50,
-						  color: "lightgreen",
-						  highlight: "yellowgreen",
-						  label: "Lightgreen"
-						},
-						{
-						  value: 40,
-						  color: "orange",
-						  highlight: "darkorange",
-						  label: "Orange"
-						}
-					  ];
-					  labels: "Aprovado"
-					  //draw
-					  var piechart = new Chart(ctx).Doughnut(data);
-					});               
-	
 
 function logout(){
     localStorage.removeItem("userDash");

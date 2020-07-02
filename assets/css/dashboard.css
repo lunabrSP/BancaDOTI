@@ -10,6 +10,7 @@
 	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
 */
 
+
 /* Reset */
 
 	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
@@ -1488,7 +1489,7 @@
 	}
 
 		a:hover {
-			color: #00BC8A !important;
+			color: #ec9421 !important;
 			text-decoration: none;
 		}
 
@@ -1604,7 +1605,7 @@
 	}
 
 	a {
-		color: #00BC8A;
+		color: #ec9421;
 	}
 
 	strong, b {
@@ -1818,7 +1819,7 @@
 		input[type="button"].special,
 		button.special,
 		.button.special {
-			background-color: #00BC8A;
+			background-color: #ec9421;
 			color: #ffffff !important;
 		}
 
@@ -1827,7 +1828,7 @@
 			input[type="button"].special:hover,
 			button.special:hover,
 			.button.special:hover {
-				background-color: #00d69d;
+				background-color: #ec9421;
 			}
 
 			input[type="submit"].special:active,
@@ -1835,7 +1836,7 @@
 			input[type="button"].special:active,
 			button.special:active,
 			.button.special:active {
-				background-color: #00a377;
+				background-color: #ec9421;
 			}
 
 /* Form */
@@ -2024,8 +2025,8 @@
 		input[type="email"]:focus,
 		select:focus,
 		textarea:focus {
-			border-color: #00BC8A;
-			box-shadow: 0 0 0 1px #00BC8A;
+			border-color: #ec9421;
+			box-shadow: 0 0 0 1px #ec9421;
 		}
 
 	.select-wrapper:before {
@@ -2045,15 +2046,15 @@
 
 	input[type="checkbox"]:checked + label:before,
 	input[type="radio"]:checked + label:before {
-		background-color: #00BC8A;
-		border-color: #00BC8A;
+		background-color: #ec9421;
+		border-color: #ec9421;
 		color: #ffffff;
 	}
 
 	input[type="checkbox"]:focus + label:before,
 	input[type="radio"]:focus + label:before {
-		border-color: #00BC8A;
-		box-shadow: 0 0 0 1px #00BC8A;
+		border-color: #ec9421;
+		box-shadow: 0 0 0 1px #ec9421;
 	}
 
 	::-webkit-input-placeholder {
@@ -2403,11 +2404,11 @@
 	}
 
 	ul.checklist li:before {
-		color: #00BC8A;
+		color: #ec9421;
 	}
 
 	ul.contact li:before {
-		color: #00BC8A;
+		color: #ec9421;
 	}
 
 /* Section/Article */
@@ -2763,7 +2764,7 @@
 		}
 
 		.wrapper.style1 {
-			background-color: #00BC8A;
+			background-color: #ec9421;
 			color: #bfeee1;
 		}
 
@@ -2865,7 +2866,7 @@
 				.wrapper.style1 button.special,
 				.wrapper.style1 .button.special {
 					background-color: #ffffff;
-					color: #00BC8A !important;
+					color: #ec9421 !important;
 				}
 
 			.wrapper.style1 label {
@@ -2909,7 +2910,7 @@
 			.wrapper.style1 input[type="radio"]:checked + label:before {
 				background-color: #ffffff;
 				border-color: #ffffff;
-				color: #00BC8A;
+				color: #ec9421;
 			}
 
 			.wrapper.style1 input[type="checkbox"]:focus + label:before,
@@ -2951,11 +2952,11 @@
 			}
 
 			.wrapper.style1 ul.checklist li:before {
-				color: #00BC8A;
+				color: #ec9421;
 			}
 
 			.wrapper.style1 ul.contact li:before {
-				color: #00BC8A;
+				color: #ec9421;
 			}
 
 			.wrapper.style1 header p {
@@ -2991,7 +2992,7 @@
 			}
 
 			.wrapper.style1 .spotlight {
-				background-color: #0affbe;
+				background-color: #ec9421;
 				border-bottom-color: rgba(255, 255, 255, 0.25);
 			}
 
@@ -3009,7 +3010,7 @@
 			}
 
 			.wrapper.style2 a {
-				color: #00BC8A;
+				color: #ec9421;
 			}
 
 			.wrapper.style2 strong, .wrapper.style2 b {
@@ -3085,7 +3086,7 @@
 				.wrapper.style2 input[type="button"].special,
 				.wrapper.style2 button.special,
 				.wrapper.style2 .button.special {
-					background-color: #00BC8A;
+					background-color: #ec9421;
 					color: #ffffff !important;
 				}
 
@@ -3094,7 +3095,7 @@
 					.wrapper.style2 input[type="button"].special:hover,
 					.wrapper.style2 button.special:hover,
 					.wrapper.style2 .button.special:hover {
-						background-color: #00d69d;
+						background-color: #ec9421;
 					}
 
 					.wrapper.style2 input[type="submit"].special:active,
@@ -3102,7 +3103,7 @@
 					.wrapper.style2 input[type="button"].special:active,
 					.wrapper.style2 button.special:active,
 					.wrapper.style2 .button.special:active {
-						background-color: #00a377;
+						background-color: #ec9421;
 					}
 
 			.wrapper.style2 label {
@@ -3123,8 +3124,8 @@
 				.wrapper.style2 input[type="email"]:focus,
 				.wrapper.style2 select:focus,
 				.wrapper.style2 textarea:focus {
-					border-color: #00BC8A;
-					box-shadow: 0 0 0 1px #00BC8A;
+					border-color: #ec9421;
+					box-shadow: 0 0 0 1px #ec9421;
 				}
 
 			.wrapper.style2 .select-wrapper:before {
@@ -3144,15 +3145,15 @@
 
 			.wrapper.style2 input[type="checkbox"]:checked + label:before,
 			.wrapper.style2 input[type="radio"]:checked + label:before {
-				background-color: #00BC8A;
-				border-color: #00BC8A;
+				background-color: #ec9421;
+				border-color: #ec9421;
 				color: #ffffff;
 			}
 
 			.wrapper.style2 input[type="checkbox"]:focus + label:before,
 			.wrapper.style2 input[type="radio"]:focus + label:before {
-				border-color: #00BC8A;
-				box-shadow: 0 0 0 1px #00BC8A;
+				border-color: #ec9421;
+				box-shadow: 0 0 0 1px #ec9421;
 			}
 
 			.wrapper.style2 ::-webkit-input-placeholder {
@@ -3188,11 +3189,11 @@
 			}
 
 			.wrapper.style2 ul.checklist li:before {
-				color: #00BC8A;
+				color: #ec9421;
 			}
 
 			.wrapper.style2 ul.contact li:before {
-				color: #00BC8A;
+				color: #ec9421;
 			}
 
 			.wrapper.style2 header p {
@@ -3271,10 +3272,10 @@
 /* Banner */
 
 	#banner {
-		background-image: url("images/overlay.png"), -moz-linear-gradient(45deg, #4A4771 0%, #7C3875 100%);
-		background-image: url("images/overlay.png"), -webkit-linear-gradient(45deg, #4A4771 0%, #7C3875 100%);
-		background-image: url("images/overlay.png"), -ms-linear-gradient(45deg, #4A4771 0%, #7C3875 100%);
-		background-image: url("images/overlay.png"), linear-gradient(45deg, #4A4771 0%, #7C3875 100%);
+		background-image: url("images/overlay.png"), -moz-linear-gradient(45deg, #252066 0%, #1a18b4 100%);
+		background-image: url("images/overlay.png"), -webkit-linear-gradient(45deg, #252066 0%, #1a18b4 100%);
+		background-image: url("images/overlay.png"), -ms-linear-gradient(45deg, #252066 0%, #1a18b4 100%);
+		background-image: url("images/overlay.png"), linear-gradient(45deg, #252066 0%, #1a18b4 100%);
 		background-size: 100px 100px, cover;
 		color: rgba(255, 255, 255, 0.5);
 		padding: 2em 0 0em;
