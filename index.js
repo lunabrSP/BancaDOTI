@@ -3,14 +3,16 @@ function testar(){
     }
 
 function validar(){
-    var txtEmail = document.getElementById("txtEmail").value;
+    var txtEmail = document.getElementById("txtEmail").value
     var txtSenha = document.getElementById("txtSenha").value;
 
     console.log("Valores digitados = "+txtEmail+" / "+ txtSenha);
 
+
     // json que vai no corpo da mensagem
     var msgBody = {
         email: txtEmail,
+        racf: txtEmail,
         senha: txtSenha
     }
 
@@ -22,7 +24,8 @@ function validar(){
         }
 
     }
-    fetch("http://localhost:8080/login", cabecalho)
+    console.log(cabecalho)
+    fetch("http://localhost:8080/login",cabecalho)
         .then(resposta=>tratarResultado(resposta));
 }
 
