@@ -13,87 +13,65 @@
         <link rel="stylesheet" href="assets/css/dashboard.css">
         <script type="text/javascript" src="assets/js/dashboard.js"></script>
         <script src="jquery-2.1.4.min.js"></script>
-		    <script src="assets/js/dashboard.js"></script>
+        <script src="assets/js/dashboard.js"></script>
+        
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <script type="text/javascript">
+          google.charts.load("current", {packages:["corechart"]});
+          google.charts.setOnLoadCallback(desenharPizza);
+        </script>
+
 	</head>
 	<body onload="carregaVolume()">
 
 		<!-- Banner -->
 			<section id="banner">
+        
 				<div class="inner split2">
 					<section>
-                        <h2 id="conteudo"></h2><br><br>
-                        <h2>Total de transações: <a id="total"></a></h2>
+            <h4 id="barraUser"> </h4><br>
+            <h2 id="conteudo"></h2><br>
+            <h2>Total de transações: <a id="total"></a></h2>
                         
 					</section>
 					<section>
                         
 						<ul class="actions">
-							<li><br><a href="#" class="button special" onclick="logout()">LOGOUT</a></li>
-                        </ul>
+              <li><br><br><a href="#" class="button special" onclick="logout()">LOGOUT</a></li>
+              <li><br><a href="dropdown.html" class="button special" onclick="">VOLTAR</a></li>
+            </ul>
                         
 					</section>
 				</div>
 			</section>
 
+      
 		<!-- One -->
 			<section id="one" class="wrapper">
 				<div class="inner split">
 					<section>
             <div class="card text-white bg-success mb-3" style="max-width: 16rem;" >
-              <div class="card-header">Transações com Sucesso</div>
+              <div class="card-header">TRANSAÇÕES - SUCESSO</div>
               <div class="card-body">
-                <h5 class="card-title" id="sucesso"></h5>
+                <h7 class="card-title" id="sucesso"></h7>
               </div>
           </div>
           <div class="card text-white bg-warning mb-3" style="max-width: 16rem;">
-              <div class="card-header">Transações com Falha</div>
+              <div class="card-header">TRANSAÇÕES - FALHAS</div>
               <div class="card-body">
-                <h5 class="card-title" id="falha"></h5>
+                <h7 class="card-title" id="falha"></h7>
               </div>
             </div>
           <div class="card text-white bg-danger mb-3" style="max-width: 16rem;">
-              <div class="card-header">Possiveis Fraudes</div>
+              <div class="card-header">POSSIVEIS FRAUDES</div>
               <div class="card-body">
-                <h5 class="card-title"id="fraude"></h5>
+                <h7 class="card-title text-center" id="fraude"></h7>
               </div>
           </div>
 					</section>
 					<section>
-						<div>
-              <canvas id="mycanvas" width="250" height="250"></canvas>
-              <!--<script>
-                $(document).ready(function(){});
-                  /*var ctx = $("#mycanvas").get(0).getContext("2d");
-          
-                  //pie chart data
-                  //sum of values = 360
-                  var data = [
-                    {
-                      value: 500,
-                      color: "cornflowerblue",
-                      highlight: "lightskyblue",
-                      label: "Corn Flower Blue"
-                     
-                    },
-                    {
-                      value: 50,
-                      color: "lightgreen",
-                      highlight: "yellowgreen",
-                      label: "Lightgreen"
-                    },
-                    {
-                      value: 40,
-                      color: "orange",
-                      highlight: "darkorange",
-                      label: "Orange"
-                    }
-                  ];
-                  labels: "Aprovado"
-                  //draw
-                  var piechart = new Chart(ctx).Doughnut(data);
-                });*/
-              </script>-->
-              </div>	
+					<h7>	<div id="graficoPizza"style="width: 800px; height: 500px;"></div></h7>
+            
       </section>
       
       <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

@@ -1505,16 +1505,21 @@
 		margin: 0 0 2em 0;
 	}
 
-	h1, h2, h3, h4, h5, h6 {
+	h1, h2, h3, h4, h5, h6, h7 {
 		font-weight: bold;
 		line-height: 1.5;
 		margin: 0 0 1em 0;
 	}
 
-		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+		h1 a, h2 a, h3 a, h4 a, h5 a, h6, a {
 			color: inherit;
 			text-decoration: none;
 		}
+	h7 {
+		color: inherit;
+		text-decoration: none;
+		text-align: center;
+	}
 
 	h2 {
 		font-size: 1.75em;
@@ -1525,6 +1530,10 @@
 	}
 
 	h4 {
+		font-size: 1.1em;
+	}
+
+	h7 {
 		font-size: 1.1em;
 	}
 
@@ -1614,6 +1623,10 @@
 
 	h1, h2, h3, h4, h5, h6 {
 		color: #666;
+	}
+
+	h7 {
+		color: #ffffff;
 	}
 
 	blockquote {
@@ -3287,6 +3300,17 @@
 			margin-bottom: 0;
 			color: #fff;
 		}
+	
+		#banner h4 {
+			font-size: 1.2em;
+			line-height: 2.3;
+			margin-bottom: 0;
+			color: #fff;
+			margin-left: auto;
+			margin-right: auto;
+			max-width: 70em;
+			width: 90%;
+			}
 
 		#banner p {
 			font-size: 1.15em;
