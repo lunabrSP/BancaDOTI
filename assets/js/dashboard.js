@@ -46,6 +46,8 @@ function preenche(res){
     desenharPizza(res);
 
     barraUsuario();
+
+    carregaParceirosSmall();
 }
 
 
@@ -82,3 +84,25 @@ function desenharPizza(res) {
                                         .replace("**RACF**", user.racf.toUpperCase());   
 }
 
+function carregaParceirosSmall(){
+    fetch("http://localhost:8080/nomeagentes")
+        .then(res => res.json())
+        .then(res => preencheSmall(res)); 
+}
+
+function preencheSmall(resJson){
+    var contAgente ="";
+
+    var tptDDLBegin = `<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">`
+    var tptDDLEnd = `</div>`
+    var templateAgente = `<a class="dropdown-item" href="dashboard.html?id=**IDAGENTE**">**NOMEAGENTE**</a>`
+
+    for(i=0; i<resJson.length; i++){       
+        var agente = resJson[i];
+        contAgente = contAgente + templateAgente.replace("**IDAGENTE**",agente.id_agente)
+                                                .replace("**NOMEAGENTE**", agente.nome_agente);
+    }
+    document.getElementById("conteudoSmall").innerHTML = tptDDLBegin + contAgente + tptDDLEnd;
+
+    carregaTopTen();
+}
